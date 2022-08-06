@@ -8,11 +8,12 @@ public class FirstNonRepeatedChar {
 
 	public static void main(String[] args) {
 
-		String str = "seeiwiss";
-		
+		String str = "seeiwissab";
+		/*
+		 * Linked hashmap will store the insertion order
+		 * 
+		 */
 		Map<Character, Integer> map = new LinkedHashMap<>(); 
-		//Linked hashmap will store the insertion order
-		
 		
 		int count = 1;
 		for(int i=0; i<str.length(); i++) {

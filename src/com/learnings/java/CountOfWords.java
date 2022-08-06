@@ -14,6 +14,10 @@ public class CountOfWords {
 			HashMap<String, Integer> resultMap = new HashMap<String, Integer>();
 			String words[] = str.split(" ");
 			for(int i=0; i<words.length; i++) {
+				/*
+				 * use containsKey 
+				 * 
+				 * */
 				if(resultMap.containsKey(words[i].toLowerCase())) {
 					resultMap.put(words[i].toLowerCase(), (resultMap.get(words[i].toLowerCase())+1));
 				}else {
